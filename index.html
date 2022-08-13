@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme maker</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <canvas></canvas>
+    <input type="range" id="line-width" min="1" max="30" value="5" step="0.1"/>
+    <div>
+        <input type="color" id="color">
+        <div class="color-option" style="background-color:#f3a683" data-color="#f3a683"></div>
+        <div class="color-option" style="background-color:#f7d794" data-color="#f7d794"></div>
+        <div class="color-option" style="background-color:#778beb" data-color="#778beb"></div>
+        <div class="color-option" style="background-color:#e77f67" data-color="#e77f67"></div>
+        <div class="color-option" style="background-color:#cf6a87" data-color="#cf6a87"></div>
+        <div class="color-option" style="background-color:#546de5" data-color="#546de5"></div>
+        <div class="color-option" style="background-color:#ea8685" data-color="#ea8685"></div>
+        <div class="color-option" style="background-color:#3dc1d3" data-color="#3dc1d3"></div>
+        <div class="color-option" style="background-color:#786fa6" data-color="#786fa6"></div>
+        <div class="color-option" style="background-color:#303952" data-color="#303952"></div>
+        <div class="color-option" style="background-color:#596275" data-color="#596275"></div>
+    </div>
+
+    <button id="mode-btn">Fill</button>
+    <button id="destroy-btn">destroy</button>
+    <button id="eraser-btn">Erase</button>
+    <input type="file" accept="image/*" id="file"/>
+    <input type="text" placeholder="입력 후 더블클릭" id="text"/>
+    <button id="save">save</button>
+    <script src="app.js"></script>
+</body>
+
+</html>
