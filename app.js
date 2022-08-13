@@ -116,7 +116,7 @@ function onDoubleClick(e){
         ctx.save();
         ctx.lineWidth=1;
         ctx.font = "68px serif"
-        ctx.fillText(text,e.offsetX,e.offsetY)
+        ctx.strokeText(text,e.offsetX,e.offsetY)
         ctx.restore()
     }
 }

@@ -1,7 +1,75 @@
 @charset "uth-8";
+@import "reset.css";
 
-body{ display: flex; align-items: center; justify-content: center;}
+body {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: gainsboro;
+    padding: 20px;
+    /* font-family: ; */
+}
 
-canvas{width: 800px; height: 800px; border: 5px solid #000;}
+canvas {
+    width: 800px;
+    height: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 0 #ccc;
+}
 
-.color-option{width: 50px;height: 50px;}
+.color-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.color-option {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform ease-in-out .1s;
+    border: 4px solid #fff;
+}
+
+.color-option:hover {
+    transform: scale(1.1);
+}
+
+input#color {
+    background-color: #fff;
+}
+
+
+
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button,label {
+    all: unset;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+    background-color: royalblue;
+    color: #fff;
+    transition: opacity linear .1s;
+}
+button:hover{opacity: .85;}
+
+input#text{
+    all: unset;
+    padding: 7px 0;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+input#file{display: none;}

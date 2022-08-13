@@ -10,10 +10,7 @@
 </head>
 
 <body>
-
-    <canvas></canvas>
-    <input type="range" id="line-width" min="1" max="30" value="5" step="0.1"/>
-    <div>
+    <div class="color-options">
         <input type="color" id="color">
         <div class="color-option" style="background-color:#f3a683" data-color="#f3a683"></div>
         <div class="color-option" style="background-color:#f7d794" data-color="#f7d794"></div>
@@ -28,12 +25,24 @@
         <div class="color-option" style="background-color:#596275" data-color="#596275"></div>
     </div>
 
-    <button id="mode-btn">Fill</button>
-    <button id="destroy-btn">destroy</button>
-    <button id="eraser-btn">Erase</button>
-    <input type="file" accept="image/*" id="file"/>
-    <input type="text" placeholder="입력 후 더블클릭" id="text"/>
-    <button id="save">save</button>
+    <canvas></canvas>
+
+    <div class="btns">
+
+        <input type="range" id="line-width" min="1" max="30" value="5" step="0.1"/>
+        <button id="mode-btn">🪣Fill</button>
+        <button id="destroy-btn">🤣🧻destroy</button>
+        <button id="eraser-btn">Erase</button>
+        <label for="file">
+            ADD PIC
+            <input type="file" accept="image/*" id="file"/>
+        </label>
+        
+        <input type="text" placeholder="입력 후 더블클릭" id="text"/>
+        <button id="save">save</button>
+        
+    </div>
+
     <script src="app.js"></script>
 </body>
 
